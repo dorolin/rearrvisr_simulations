@@ -24,6 +24,8 @@ Steps and scripts to simulate rearrangements for assessing the performance of *r
 * After finishing, continue with remaining simulations (set `#SBATCH --array=5-36`)
 * After all runs finished, summarize results by running `get_simout_sum.sh`
 * Optionally, plot results with `Rscript --vanilla R/summarizePrecRec.R`
+    
+    &rarr; *Returns file `~/Rearrangements/Simulations/simout/*_precrec.eps`*
 
 
 ## Optionally, run the software [GRIMM](http://grimm.ucsd.edu/GRIMM/index.html) on the same set of simulations
@@ -39,4 +41,7 @@ Steps and scripts to simulate rearrangements for assessing the performance of *r
 * Run `run_unimog_batch.sh`
 * After all runs finished, summarize results by running `get_unimog_sum.sh`
 
+* Optionally, make plots that compare results with `Rscript --vanilla R/comparePerform.R`
+
+    &rarr; *Returns files `~/Rearrangements/Simulations/simout/*_rearrcnts.eps` and `~/Rearrangements/Simulations/simout/*_breakpnts.eps`*
 
